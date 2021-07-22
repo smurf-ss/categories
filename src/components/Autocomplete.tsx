@@ -5,7 +5,7 @@ import AutocompleteMaterialUI, {
   AutocompleteRenderInputParams,
 } from "@material-ui/lab/Autocomplete";
 
-type AutocompleteOptions = { label: string };
+export type AutocompleteOptions = { label: string };
 
 type AutocompleteProps = {
   name: string;

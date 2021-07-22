@@ -11,7 +11,7 @@ import Paper from "@material-ui/core/Paper";
 
 const useStyles = makeStyles({
   table: {
-    width: 700,
+    minWidth: 700,
   },
 });
 
@@ -54,7 +54,6 @@ const Table = <DataSource extends any>({
   columns = [],
 }: TableProps<DataSource>) => {
   const classes = useStyles();
-
   const { rows } = useTable<DataSource>({ dataSource, columns });
 
   return (
